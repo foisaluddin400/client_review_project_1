@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi"; // Hamburger & Close icon
-
+import logo from "../assets/Home/logo.png"; // Assuming you have a logo image in assets folder
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,9 +11,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <div className="text-2xl font-bold text-[#4A90E2]">
-          TaskMaster
-        </div>
+       <img src={logo} alt="Logo" className="h-10 w-auto" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-gray-600 font-medium">
